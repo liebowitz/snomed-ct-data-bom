@@ -4,12 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <!--parent>
+    <parent>
         <groupId>dev.ikm.build</groupId>
         <artifactId>java-parent</artifactId>
         <version>1.53.0</version>
         <relativePath/>
-    </parent-->
+    </parent>
 
     <groupId>dev.ikm.tinkar</groupId>
     <artifactId>snomed-ct-data-bom</artifactId>
@@ -95,93 +95,8 @@
         <dependencies>
             <dependency>
                 <groupId>dev.ikm.tinkar</groupId>
-                <artifactId>entity-provider</artifactId>
-                <version>${tinkar-core.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>dev.ikm.tinkar</groupId>
-                <artifactId>entity</artifactId>
-                <version>${tinkar-core.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>dev.ikm.tinkar</groupId>
-                <artifactId>common</artifactId>
-                <version>${tinkar-core.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>dev.ikm.tinkar</groupId>
-                <artifactId>composer</artifactId>
-                <version>${tinkar-composer.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>dev.ikm.tinkar</groupId>
-                <artifactId>data-spinedarray-provider</artifactId>
-                <version>${tinkar-core.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>dev.ikm.tinkar</groupId>
-                <artifactId>executor-provider</artifactId>
-                <version>${tinkar-core.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>dev.ikm.jpms</groupId>
-                <artifactId>eclipse-collections-api</artifactId>
-                <version>${eclipse-collections-api.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>slf4j-api</artifactId>
-                <version>${slf4j.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>slf4j-simple</artifactId>
-                <version>${slf4j.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.maven</groupId>
-                <artifactId>maven-plugin-plugin</artifactId>
-                <version>${maven-plugin-plugin.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.maven</groupId>
-                <artifactId>maven-plugin-api</artifactId>
-                <version>${maven-plugin-api.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.maven.plugin-tools</groupId>
-                <artifactId>maven-plugin-annotations</artifactId>
-                <version>${maven-plugin-annotations.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>dev.ikm.tinkar</groupId>
-                <artifactId>coordinate</artifactId>
-                <version>${tinkar-core.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>dev.ikm.tinkar</groupId>
-                <artifactId>terms</artifactId>
-                <version>${tinkar-core.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>dev.ikm.tinkar</groupId>
-                <artifactId>search-provider</artifactId>
-                <version>${tinkar-core.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.logging.log4j</groupId>
-                <artifactId>log4j-slf4j2-impl</artifactId>
-                <version>${log4j.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>dev.ikm.tinkar.ext.owl</groupId>
-                <artifactId>owl-extension</artifactId>
-                <version>${tinkar-core.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.junit.jupiter</groupId>
-                <artifactId>junit-jupiter</artifactId>
-                <version>${jupiter.version}</version>
+                <artifactId>tinkar-data</artifactId>
+                <version>${tinkar-starter-data.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
