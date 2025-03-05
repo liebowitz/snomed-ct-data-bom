@@ -7,7 +7,7 @@
     <parent>
         <groupId>dev.ikm.build</groupId>
         <artifactId>java-parent</artifactId>
-        <version>1.55.0</version>
+        <version>1.58.0</version>
         <relativePath/>
     </parent>
 
@@ -49,12 +49,12 @@
     </scm>
 
     <properties>
-        <maven.compiler.source>21</maven.compiler.source>
-        <maven.compiler.target>21</maven.compiler.target>
-        <java.version>21</java.version>
+        <maven.compiler.source>23</maven.compiler.source>
+        <maven.compiler.target>23</maven.compiler.target>
+        <java.version>23</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <tinkar-core.version>1.82.0</tinkar-core.version>
-        <tinkar-schema.version>1.33.0</tinkar-schema.version>
+        <tinkar-core.version>1.88.0</tinkar-core.version>
+        <tinkar-schema.version>1.38.0</tinkar-schema.version>
         <tinkar-transformer-api.version>1.7.0</tinkar-transformer-api.version>
         <log4j.version>3.0.0-alpha1</log4j.version>
         <slf4j.version>2.0.13</slf4j.version>
@@ -76,11 +76,10 @@
         <origin.namespace>3094dbd1-60cf-44a6-92e3-0bb32ca4d3de</origin.namespace>
 
         <!-- starter data -->
-        <tinkar-starter-data.version>1.5.0</tinkar-starter-data.version>
+        <tinkar-starter-data.version>1.6.0</tinkar-starter-data.version>
 
         <!-- reasoner options (ElkOwlReasoner, ElkSnomedReasoner, HybridReasoner)-->
         <reasoner-type>ElkSnomedReasoner</reasoner-type>
-        <reinferAllHierarchy>false</reinferAllHierarchy>
     </properties>
 
     <build>
