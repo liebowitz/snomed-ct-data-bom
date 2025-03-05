@@ -7,7 +7,7 @@
     <parent>
         <groupId>dev.ikm.build</groupId>
         <artifactId>java-parent</artifactId>
-        <version>1.55.0</version>
+        <version>1.58.0</version>
         <relativePath/>
     </parent>
 
@@ -49,26 +49,27 @@
     </scm>
 
     <properties>
-        <maven.compiler.source>21</maven.compiler.source>
-        <maven.compiler.target>21</maven.compiler.target>
-        <java.version>21</java.version>
+        <maven.compiler.source>23</maven.compiler.source>
+        <maven.compiler.target>23</maven.compiler.target>
+        <java.version>23</java.version>
+        <lucene.version>9.12.1</lucene.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <tinkar-core.version>1.82.0</tinkar-core.version>
+        <tinkar-core.version>1.87.0</tinkar-core.version>
         <tinkar-schema.version>1.33.0</tinkar-schema.version>
         <tinkar-transformer-api.version>1.7.0</tinkar-transformer-api.version>
         <log4j.version>3.0.0-alpha1</log4j.version>
-        <slf4j.version>2.0.13</slf4j.version>
+        <slf4j.version>2.0.17</slf4j.version>
         <tinkar-composer.version>1.5.0</tinkar-composer.version>
         <eclipse-collections-api.version>11.1.0-r11</eclipse-collections-api.version>
         <maven-plugin-plugin.version>3.13.0</maven-plugin-plugin.version>
         <maven-plugin-annotations.version>3.13.0</maven-plugin-annotations.version>
         <maven-plugin-api.version>3.9.7</maven-plugin-api.version>
         <!--nexus-staging-maven-plugin.version>1.6.13</nexus-staging-maven-plugin.version-->
-        <maven-deploy-plugin.version>3.1.0</maven-deploy-plugin.version>
+        <maven-deploy-plugin.version>3.1.4</maven-deploy-plugin.version>
         <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
         <maven-gpg-plugin.version>3.1.0</maven-gpg-plugin.version>
         <build-helper-maven-plugin.version>3.6.0</build-helper-maven-plugin.version>
-        <jupiter.version>5.10.0</jupiter.version>
+        <jupiter.version>5.12.0</jupiter.version>
 
         <!-- origin -->
         <packager.name>IKM Dev</packager.name>
@@ -101,6 +102,43 @@
                 <groupId>dev.ikm.tinkar</groupId>
                 <artifactId>tinkar-data</artifactId>
                 <version>${tinkar-starter-data.version}</version>
+            </dependency>
+
+            <!-- Lucene -->
+            <dependency>
+                <groupId>org.apache.lucene</groupId>
+                <artifactId>lucene-queryparser</artifactId>
+                <version>${lucene.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.lucene</groupId>
+                <artifactId>lucene-queries</artifactId>
+                <version>${lucene.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.lucene</groupId>
+                <artifactId>lucene-highlighter</artifactId>
+                <version>${lucene.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.lucene</groupId>
+                <artifactId>lucene-core</artifactId>
+                <version>${lucene.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.lucene</groupId>
+                <artifactId>lucene-suggest</artifactId>
+                <version>${lucene.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.lucene</groupId>
+                <artifactId>lucene-backward-codecs</artifactId>
+                <version>${lucene.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -267,17 +305,6 @@
                             </gpgArguments>
                         </configuration>
                     </plugin>
-                    <!--plugin>
-                        <groupId>org.sonatype.plugins</groupId>
-                        <artifactId>nexus-staging-maven-plugin</artifactId>
-                        <version>${nexus-staging-maven-plugin.version}</version>
-                        <extensions>true</extensions>
-                        <configuration>
-                            <serverId>ossrh</serverId>
-                            <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
-                            <autoReleaseAfterClose>true</autoReleaseAfterClose>
-                        </configuration>
-                    </plugin-->
                 </plugins>
             </build>
         </profile>
