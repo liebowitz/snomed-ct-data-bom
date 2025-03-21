@@ -138,13 +138,7 @@
                 <groupId>org.apache.lucene</groupId>
                 <artifactId>lucene-backward-codecs</artifactId>
                 <version>${lucene.version}</version>
-            </dependency>
-            
-<!--            <dependency>
-                <groupId>dev.ikm.tinkar</groupId>
-                <artifactId>data-ephemeral-provider</artifactId>
-                <version>${tinkar-core.version}</version>
-            </dependency>-->            
+            </dependency>         
         </dependencies>
     </dependencyManagement>
 
