@@ -140,11 +140,11 @@
                 <version>${lucene.version}</version>
             </dependency>
             
-            <dependency>
+<!--            <dependency>
                 <groupId>dev.ikm.tinkar</groupId>
                 <artifactId>data-ephemeral-provider</artifactId>
                 <version>${tinkar-core.version}</version>
-            </dependency>            
+            </dependency>-->            
         </dependencies>
     </dependencyManagement>
 
