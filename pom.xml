@@ -77,7 +77,7 @@
         <origin.namespace>3094dbd1-60cf-44a6-92e3-0bb32ca4d3de</origin.namespace>
 
         <!-- starter data -->
-        <tinkar-starter-data.version>1.8.0</tinkar-starter-data.version>
+        <tinkar-starter-data.version>1.9.0</tinkar-starter-data.version>
 
         <!-- reasoner options (ElkOwlReasoner, ElkSnomedReasoner, HybridReasoner)-->
         <reasoner-type>ElkSnomedReasoner</reasoner-type>
