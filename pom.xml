@@ -77,8 +77,10 @@
         <origin.namespace>3094dbd1-60cf-44a6-92e3-0bb32ca4d3de</origin.namespace>
 
         <!-- starter data -->
-        <tinkar-starter-data.version>1.9.0</tinkar-starter-data.version>
-
+        <tinkar-starter-data.groupId>dev.ikm.data.tinkar</tinkar-starter-data.groupId>
+        <tinkar-starter-data.artifactId>tinkar-starter-data</tinkar-starter-data.artifactId>
+        <tinkar-starter-data.classifier>unreasoned-sa</tinkar-starter-data.classifier>
+        <tinkar-starter-data.version>1.2.0</tinkar-starter-data.version>
         <!-- reasoner options (ElkOwlReasoner, ElkSnomedReasoner, HybridReasoner)-->
         <reasoner-type>ElkSnomedReasoner</reasoner-type>
     </properties>
@@ -98,8 +100,9 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>dev.ikm.tinkar</groupId>
-                <artifactId>tinkar-data</artifactId>
+                <groupId>${tinkar-starter-data.groupId}</groupId>
+                <artifactId>${tinkar-starter-data.artifactId}</artifactId>
+                <classifier>${tinkar-starter-data.classifier}</classifier>
                 <version>${tinkar-starter-data.version}</version>
             </dependency>
 
