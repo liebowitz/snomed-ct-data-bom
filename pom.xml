@@ -7,7 +7,7 @@
     <parent>
         <groupId>dev.ikm.build</groupId>
         <artifactId>java-parent</artifactId>
-        <version>1.59.0</version>
+        <version>1.63.0</version>
         <relativePath/>
     </parent>
 
@@ -147,29 +147,13 @@
 
     <profiles>
         <profile>
-            <id>emptySourceJavadocOSSRH</id>
+            <id>emptySourceJavadocMavenCentralRepository</id>
             <activation>
                 <property>
-                    <name>repositoryIdOSSRH</name>
+                    <name>repositoryIdMavenCentralRepository</name>
                     <value>true</value>
                 </property>
             </activation>
-            <distributionManagement>
-                <snapshotRepository>
-                    <id>ossrh</id>
-                    <layout>maven</layout>
-                    <url>
-                        https://s01.oss.sonatype.org/content/repositories/snapshots
-                    </url>
-                </snapshotRepository>
-                <repository>
-                    <id>maven-releases</id>
-                    <layout>maven</layout>
-                    <url>
-                        https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/
-                    </url>
-                </repository>
-            </distributionManagement>
             <build>
                 <plugins>
                     <plugin>
@@ -192,29 +176,13 @@
             </build>
         </profile>
         <profile>
-            <id>sourceJavadocOSSRH</id>
+            <id>sourceJavadocMavenCentralRepository</id>
             <activation>
                 <property>
-                    <name>repositoryIdOSSRH</name>
+                    <name>repositoryIdMavenCentralRepository</name>
                     <value>true</value>
                 </property>
             </activation>
-            <distributionManagement>
-                <snapshotRepository>
-                    <id>ossrh</id>
-                    <layout>maven</layout>
-                    <url>
-                        https://s01.oss.sonatype.org/content/repositories/snapshots
-                    </url>
-                </snapshotRepository>
-                <repository>
-                    <id>maven-releases</id>
-                    <layout>maven</layout>
-                    <url>
-                        https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/
-                    </url>
-                </repository>
-            </distributionManagement>
             <build>
                 <plugins>
                     <plugin>
@@ -252,29 +220,13 @@
             </build>
         </profile>
         <profile>
-            <id>stageOSSRH</id>
+            <id>stageMavenCentralRepository</id>
             <activation>
                 <property>
-                    <name>repositoryIdOSSRH</name>
+                    <name>repositoryIdMavenCentralRepository</name>
                     <value>true</value>
                 </property>
             </activation>
-            <distributionManagement>
-                <snapshotRepository>
-                    <id>ossrh</id>
-                    <layout>maven</layout>
-                    <url>
-                        https://s01.oss.sonatype.org/content/repositories/snapshots
-                    </url>
-                </snapshotRepository>
-                <repository>
-                    <id>maven-releases</id>
-                    <layout>maven</layout>
-                    <url>
-                        https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/
-                    </url>
-                </repository>
-            </distributionManagement>
             <build>
                 <pluginManagement>
                     <plugins>
