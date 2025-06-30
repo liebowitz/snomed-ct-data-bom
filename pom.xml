@@ -54,12 +54,12 @@
         <java.version>23</java.version>
         <lucene.version>9.12.1</lucene.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <tinkar-core.version>1.105.0</tinkar-core.version>
-        <tinkar-schema.version>1.39.0</tinkar-schema.version>
+        <tinkar-core.version>1.112.0</tinkar-core.version>
+        <tinkar-schema.version>1.42.0</tinkar-schema.version>
         <tinkar-transformer-api.version>1.7.0</tinkar-transformer-api.version>
         <log4j.version>3.0.0-alpha1</log4j.version>
         <slf4j.version>2.0.17</slf4j.version>
-        <tinkar-composer.version>1.6.0</tinkar-composer.version>
+        <tinkar-composer.version>1.8.0</tinkar-composer.version>
         <eclipse-collections-api.version>12.0.0.M3-r2</eclipse-collections-api.version>
         <maven-plugin-plugin.version>3.13.0</maven-plugin-plugin.version>
         <maven-plugin-annotations.version>3.15.0</maven-plugin-annotations.version>
@@ -80,7 +80,7 @@
         <tinkar-starter-data.groupId>dev.ikm.data.tinkar</tinkar-starter-data.groupId>
         <tinkar-starter-data.artifactId>tinkar-starter-data</tinkar-starter-data.artifactId>
         <tinkar-starter-data.classifier>unreasoned-sa</tinkar-starter-data.classifier>
-        <tinkar-starter-data.version>1.2.0</tinkar-starter-data.version>
+        <tinkar-starter-data.version>1.7.0</tinkar-starter-data.version>
         <!-- reasoner options (ElkOwlReasoner, ElkSnomedReasoner, HybridReasoner)-->
         <reasoner-type>ElkSnomedReasoner</reasoner-type>
     </properties>
